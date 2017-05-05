@@ -5,19 +5,41 @@ body {
 nav {
   z-index: 1000; }
 
-.navbar {
+.navbar-fixed-top {
   margin-bottom: 0;
-  border-radius: 0; }
+  border: none;
+  border-radius: 0;
+  height: 100px;
+  transition: background-color 2s ease 0s;
+  background-color: rgba(255, 255, 255, 0.5); }
+  .navbar-fixed-top .navbar-brand {
+    position: absolute;
+    left: 50%; }
+    .navbar-fixed-top .navbar-brand img {
+      height: 70px; }
+
+.navbar-fixed-top.transparent {
+  background-color: white;
+  transition: background-color 2s ease 0s;
+  border-bottom: 1px solid #3b3a36;
+  transition: border-bottom 1s ease 0s; }
+
+.container-fluid {
+  padding: 0; }
+
+.row {
+  margin: 0; }
 
 .top {
-  position: absolute;
+  position: relative;
   top: 0px;
   width: 100%;
   height: 100vh;
-  background: url(../img/background.jpeg);
+  background: url(../img/background.jpeg) 50% 0 repeat fixed;
   background-size: cover;
   overflow: hidden; }
   .top #content {
+    margin: 0 auto;
     padding-top: 25%;
     text-align: center;
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
@@ -47,5 +69,46 @@ nav {
     opacity: 0; }
   100% {
     opacity: 1; } }
+.about {
+  background: #e9ece5;
+  height: 500px;
+  position: relative; }
+  .about .skills, .about .learning {
+    text-align: center;
+    margin-top: 90px; }
+  .about i {
+    color: #3b3a36;
+    font-size: 4em; }
+  .about h2 {
+    color: #3b3a36;
+    margin-top: 10px; }
+  .about p {
+    color: #3b3a36; }
+    .about p .text {
+      line-height: 2em;
+      font-size: 18px;
+      position: relative;
+      top: 90px; }
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: #b3c2bf;
+  color: #3b3a36; }
+  footer .message {
+    text-align: center;
+    position: relative;
+    top: 5px; }
+    footer .message a {
+      font-size: 2em;
+      color: #3b3a36; }
+      footer .message a i {
+        position: relative;
+        top: 5px;
+        left: 5px; }
+  footer .copy {
+    text-align: center;
+    margin-top: 30px; }
 
 /*# sourceMappingURL=stylesheet.css.map */

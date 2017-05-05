@@ -3,60 +3,127 @@
 
 <head>
   <title>Caleb Cox</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/stylesheet.css">
 
+  <!-- Google Fonts and FontAwesome Icons -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap Stylesheet CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <!-- Custom Stylesheet and JS -->
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <script type="text/javascript" src="js/custom.js"></script>
+
+  <!-- Typed.js -->
   <script src="js/typed.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function(){
-        Typed.new('.type', {
-          strings: ["Designer.", "Developer."],
-          typeSpeed: 30
-        });
+    document.addEventListener('DOMContentLoaded', function() {
+      Typed.new('.type', {
+        stringsElement: document.getElementById('typed-strings'),
+        typeSpeed: 120,
+        loop: true,
+        loopCount: null,
+        backDelay: 1500,
+        showCursor: true,
+        cursorChar: "|"
+      });
     });
   </script>
 </head>
 
 <body>
-
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
 
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-        <a class="navbar-brand" href="#">Caleb Cox</a>
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/logo2.svg" alt="Caleb Cox"></a>
       </div>
 
       <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </div> -->
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div> -->
+    </div>
   </nav>
 
-  <section class="top">
-    <!-- <div class="container"> -->
+  <div class="container-fluid">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <section class="top" data-type="background" data-speed="5">
       <div class="row">
         <div class="col-lg-12">
           <div id="content">
             <h1>Caleb Cox</h1>
-            <h3>Aspiring Web <span class="type"><span><span class="typed-cursor">|</span></h3>
+            <h3>Aspiring Web <div id="typed-strings"><p>Designer.</p><p>Developer.</p></div><span class="type"></span></h3>
+            <p></p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <section class="about">
+      <div class="row">
+        <div class="container">
+          <div class="col-md-3 skills">
+            <i class="fa fa-terminal" aria-hidden="true"></i>
+            <h2>Skills</h2>
+            <p>HTML
+              <br> CSS
+              <br> SASS/SCSS
+              <br> Bootstrap
+              <br> GIT
+              <br> Photoshop
+            </p>
+          </div>
+          <div class="col-md-3 learning">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            <h2>Learning</h2>
+            <p>JavaScript
+              <br> jQuery
+              <br> NodeJS
+              <br> MySQL
+              <br> MongoDB
+              <br> PHP
+              <br> Ruby
+              <br> Rails
+              <br> Illustrator
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p><span class="text">I have working knowledge with HTML5, CSS3, SASS, Bootstrap and GIT. I've used Photoshop for courses and personal projects going back to Photoshop 7 through CS6. I'm a master in &ldquo;Googlefu&rdquo; and know what to search and where to look to find an answer if one isn't readily available to me. I am also actively learning in areas where I'm lacking in order to keep up with current standards and the fast-paced changes this industry cycles through. Previously, I've worked in Computer Maintenance and Repair, Manual QA Testing, and Customer Service.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div class="container">
+          <div class="col-md-12">
+            <p class="message">Pardon the lack of content, this page is still in the process of being updated. Please feel free to check out my current work on Github. <a href="https://github.com/CalebCox"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+          </div>
+          <p class="copy">&copy; 2017 | Designed and Developed by <a href="mailto:caleb@caleb-cox.com">Caleb Cox</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <!-- Bootstrap JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
