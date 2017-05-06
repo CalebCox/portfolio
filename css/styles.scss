@@ -24,9 +24,9 @@ nav {
 
 .navbar-fixed-top.transparent {
   background-color: rgba(255,255,255,1);
-  transition: background-color 2s ease 0s;
   border-bottom: 1px solid #3b3a36;
-  transition: border-bottom 1s ease 0s;
+  transition: background-color 2s ease 0s,
+              border-bottom 1s ease 0s;
 }
 
 .container-fluid {
@@ -100,6 +100,33 @@ nav {
       font-size: 18px;
       position: relative;
       top: 90px;
+    }
+  }
+}
+
+.work {
+  background: #3b3a36;
+  height: 600px;
+  position: relative;
+  .thumbnail {
+    position: relative;
+    top: 100px;
+    height: 400px;
+    background: #e9ece5;
+    img {
+      height: 200px;
+      width: 250px;
+    }
+    .caption{
+      text-align: center;
+      .summary {
+        text-align: left;
+      }
+      i {
+        font-size: 1.5em;
+        position: relative;
+        top: 3px;
+      }
     }
   }
 }

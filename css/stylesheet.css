@@ -20,9 +20,8 @@ nav {
 
 .navbar-fixed-top.transparent {
   background-color: white;
-  transition: background-color 2s ease 0s;
   border-bottom: 1px solid #3b3a36;
-  transition: border-bottom 1s ease 0s; }
+  transition: background-color 2s ease 0s, border-bottom 1s ease 0s; }
 
 .container-fluid {
   padding: 0; }
@@ -89,6 +88,27 @@ nav {
       font-size: 18px;
       position: relative;
       top: 90px; }
+
+.work {
+  background: #3b3a36;
+  height: 600px;
+  position: relative; }
+  .work .thumbnail {
+    position: relative;
+    top: 100px;
+    height: 400px;
+    background: #e9ece5; }
+    .work .thumbnail img {
+      height: 200px;
+      width: 250px; }
+    .work .thumbnail .caption {
+      text-align: center; }
+      .work .thumbnail .caption .summary {
+        text-align: left; }
+      .work .thumbnail .caption i {
+        font-size: 1.5em;
+        position: relative;
+        top: 3px; }
 
 footer {
   position: relative;
