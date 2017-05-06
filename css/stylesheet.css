@@ -14,7 +14,7 @@ nav {
   background-color: rgba(255, 255, 255, 0.5); }
   .navbar-fixed-top .navbar-brand {
     position: absolute;
-    left: 48.5%; }
+    left: calc(50% - 31.055px); }
     .navbar-fixed-top .navbar-brand img {
       height: 70px; }
 
@@ -72,9 +72,18 @@ nav {
   background: #e9ece5;
   height: 500px;
   position: relative; }
+  @media screen and (max-width: 992px) {
+    .about {
+      height: 720px; } }
+  @media screen and (max-width: 621px) {
+    .about {
+      height: 1000px; } }
   .about .skills, .about .learning {
     text-align: center;
     margin-top: 90px; }
+    @media screen and (max-width: 1200px) {
+      .about .skills, .about .learning {
+        margin-top: 60px; } }
   .about i {
     color: #3b3a36;
     font-size: 4em; }
@@ -88,16 +97,45 @@ nav {
       font-size: 18px;
       position: relative;
       top: 90px; }
+      @media screen and (max-width: 1200px) {
+        .about p .text {
+          top: 60px; } }
+      @media screen and (max-width: 370px) {
+        .about p .text {
+          top: 20px; } }
 
 .work {
   background: #3b3a36;
   height: 600px;
   position: relative; }
+  @media screen and (max-width: 992px) {
+    .work {
+      height: 1070px; } }
+  @media screen and (max-width: 620px) {
+    .work {
+      height: 1420px; } }
   .work .thumbnail {
     position: relative;
-    top: 100px;
-    height: 400px;
+    top: 80px;
+    height: 450px;
     background: #e9ece5; }
+    @media screen and (max-width: 620px) {
+      .work .thumbnail {
+        width: 300px;
+        margin: 5px auto;
+        top: 25px; } }
+    .work .thumbnail .btn.btn-default {
+      position: absolute;
+      bottom: 5px;
+      margin: 0 auto;
+      right: 23%; }
+      @media screen and (max-width: 1200px) {
+        .work .thumbnail .btn.btn-default {
+          right: 17%; } }
+      .work .thumbnail .btn.btn-default i {
+        font-size: 1.5em;
+        position: relative;
+        top: 3px; }
     .work .thumbnail img {
       height: 200px;
       width: 250px; }
@@ -105,10 +143,6 @@ nav {
       text-align: center; }
       .work .thumbnail .caption .summary {
         text-align: left; }
-      .work .thumbnail .caption i {
-        font-size: 1.5em;
-        position: relative;
-        top: 3px; }
 
 footer {
   position: relative;
@@ -116,10 +150,16 @@ footer {
   height: 100px;
   background-color: #b3c2bf;
   color: #3b3a36; }
+  @media screen and (max-width: 720px) {
+    footer {
+      height: 125px; } }
   footer .message {
     text-align: center;
     position: relative;
     top: 5px; }
+    @media screen and (max-width: 992px) {
+      footer .message {
+        font-size: 11px; } }
     footer .message a {
       font-size: 2em;
       color: #3b3a36; }

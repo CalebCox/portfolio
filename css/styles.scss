@@ -15,7 +15,7 @@ nav {
   background-color: rgba(255,255,255,0.5);
   .navbar-brand {
     position: absolute;
-    left: 48.5%;
+    left: calc(50% - 31.055px);
     img {
       height: 70px;
     }
@@ -80,9 +80,18 @@ nav {
   background: #e9ece5;
   height: 500px;
   position: relative;
+  @media screen and (max-width: 992px) {
+    height: 720px;
+  }
+  @media screen and (max-width: 621px) {
+    height: 1000px;
+  }
   .skills, .learning {
     text-align: center;
     margin-top: 90px;
+    @media screen and (max-width: 1200px) {
+      margin-top: 60px;
+    }
   }
   i {
     color: #3b3a36;
@@ -100,6 +109,12 @@ nav {
       font-size: 18px;
       position: relative;
       top: 90px;
+      @media screen and (max-width: 1200px) {
+        top: 60px;
+      }
+      @media screen and (max-width: 370px) {
+        top: 20px;
+      }
     }
   }
 }
@@ -108,11 +123,36 @@ nav {
   background: #3b3a36;
   height: 600px;
   position: relative;
+  @media screen and (max-width: 992px) {
+    height: 1070px;
+  }
+  @media screen and (max-width: 620px) {
+    height: 1420px;
+  }
   .thumbnail {
     position: relative;
-    top: 100px;
-    height: 400px;
+    top: 80px;
+    height: 450px;
     background: #e9ece5;
+    @media screen and (max-width: 620px) {
+      width: 300px;
+      margin: 5px auto;
+      top: 25px;
+    }
+    .btn.btn-default {
+      position: absolute;
+      bottom: 5px;
+      margin: 0 auto;
+      right: 23%;
+      @media screen and (max-width: 1200px) {
+        right: 17%;
+      }
+      i {
+        font-size: 1.5em;
+        position: relative;
+        top: 3px;
+      }
+    }
     img {
       height: 200px;
       width: 250px;
@@ -121,11 +161,6 @@ nav {
       text-align: center;
       .summary {
         text-align: left;
-      }
-      i {
-        font-size: 1.5em;
-        position: relative;
-        top: 3px;
       }
     }
   }
@@ -137,10 +172,16 @@ footer {
   height: 100px;
   background-color: #b3c2bf;
   color: #3b3a36;
+  @media screen and (max-width: 720px) {
+    height: 125px;
+  }
   .message {
     text-align: center;
     position: relative;
     top: 5px;
+    @media screen and (max-width: 992px) {
+      font-size: 11px;
+    }
     a {
       font-size: 2em;
       color: #3b3a36;
