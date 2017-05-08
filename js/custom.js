@@ -36,18 +36,3 @@ $(window).resize(function () {
         $('.swap').removeClass('col-sm-6');
       }
 });
-
-//
-// $(function(){
-//   var $window = $(window);
-//
-//   function swap() {
-//     if ($window.width() < 606) {
-//       $('.swap').removeClass('.col-xs-6');
-//       $('.swap').addClass('.col-sm-6');
-//     } else {
-//       $('.swap').addClass('.col-xs-6');
-//       $('.swap').removeClass('.col-sm-6');
-//     }
-//   }
-// });
