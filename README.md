@@ -7,7 +7,9 @@ You can see the live version [here](http://www.caleb-cox.com)
 
 ### Version History
 
-v1.0.0 [current live version] - Added media queries for responsive design. Updated JS for thumbnails.
+v1.0.1 [current live version] - Updated background image for mobile. Updated phrasing of some of the copy.
+
+v1.0.0 - Added media queries for responsive design. Updated JS for thumbnails.
 
 v0.4.2 - Fixed logo centering on navigation.
 
